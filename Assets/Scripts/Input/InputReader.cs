@@ -55,6 +55,8 @@ public class InputReader : ScriptableObject, IPlayerActions
             // Assign this instance as the callback handler for player actions
             controls.Player.SetCallbacks(this);
         }
+
+        controls.Player.Enable();
     }
 
     #region XML Documentation

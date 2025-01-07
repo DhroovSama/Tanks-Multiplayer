@@ -37,16 +37,9 @@ public class ClientNetworkTransform : NetworkTransform
         base.Update();
 
         // Verify network state and commit transform updates if applicable.
-        if (NetworkManager != null)
+        if (!IsHost && NetworkManager != null && NetworkManager.IsConnectedClient && CanCommitToTransform)
         {
-            if (NetworkManager.IsConnectedClient || NetworkManager.IsListening)
-            {
-                if (CanCommitToTransform)
-                {
-                    // Send the transform data to the server.
-                    TryCommitTransformToServer(transform, NetworkManager.LocalTime.Time);
-                }
-            }
+            TryCommitTransformToServer(transform, NetworkManager.LocalTime.Time);
         }
     }
 
