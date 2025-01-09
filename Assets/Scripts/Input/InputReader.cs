@@ -40,6 +40,8 @@ public class InputReader : ScriptableObject, IPlayerActions
     #endregion
     private Controls controls;
 
+    public Vector2 AimPosition { get; private set; }
+
     #region XML Documentation
     /// <summary>
     /// Called when the ScriptableObject is enabled. Initializes the <see cref="controls"/> 
@@ -92,5 +94,15 @@ public class InputReader : ScriptableObject, IPlayerActions
         {
             PrimaryFireEvent?.Invoke(false);
         }
+    }
+
+    #region XML Documentation
+    /// <summary>
+    /// Updates the aim position based on the mouse position input.
+    /// </summary> 
+    #endregion
+    public void OnAim(InputAction.CallbackContext context)
+    {
+        AimPosition = context.ReadValue<Vector2>();
     }
 }
