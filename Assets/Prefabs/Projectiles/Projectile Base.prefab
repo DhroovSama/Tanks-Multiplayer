@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2416544771234714924}
   - component: {fileID: 5633247560224012684}
   - component: {fileID: 2687301953557916627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Projectile Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8468891146766705738}
   - component: {fileID: 7129818920672492320}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shell Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
