@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4245528909292728467, guid: a5288814c858a3c478b61d66a7208e68, type: 3}
       propertyPath: m_Name
-      value: Projectile Base Variant
+      value: ServerProjectile
       objectReference: {fileID: 0}
     - target: {fileID: 9106082582862233419, guid: a5288814c858a3c478b61d66a7208e68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,5 +55,26 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4245528909292728467, guid: a5288814c858a3c478b61d66a7208e68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6801921525898296312}
   m_SourcePrefab: {fileID: 100100000, guid: a5288814c858a3c478b61d66a7208e68, type: 3}
+--- !u!1 &4768511420389606959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4245528909292728467, guid: a5288814c858a3c478b61d66a7208e68, type: 3}
+  m_PrefabInstance: {fileID: 8702645339409888956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6801921525898296312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4768511420389606959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759502e5d8ae3924bb5d70fc170f57df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
